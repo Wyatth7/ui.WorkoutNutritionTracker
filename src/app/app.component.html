@@ -1,5 +1,8 @@
 <div class="w-100 h-100 bg-light position-relative">
- <app-header></app-header>
+ <app-header [ngSwitch]="currentPage">
+  <!-- put workout header here -->
+   <app-navigation *ngSwitchCase="'workout'"></app-navigation>
+ </app-header>
  <div class="px-4 body-padding">
   <router-outlet></router-outlet>
  </div>

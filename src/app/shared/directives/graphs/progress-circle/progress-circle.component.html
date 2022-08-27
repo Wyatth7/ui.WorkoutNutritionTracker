@@ -1,19 +1,13 @@
-<div class="svg-back bg-light p-4 border border-2 border-primary rounded d-flex flex-column justify-content-center align-items-center">
- <circle-progress
-  [radius]="60"
-  [space]="-10"
-  [outerStrokeWidth]="10"
-  [outerStrokeColor]="'#0d6efd'"
-  [innerStrokeColor]="'#205375'"
-  [innerStrokeWidth]="10"
-  [title]="titleValue"
-  [showBackground]="false"
-  [startFromZero]="false"
-  [percent]="percentValue"
-  [responsive]="true"
-  [showSubtitle]="true"
-  [subtitle]="subtitleValue"
-  [animationDuration]="0"
-  ></circle-progress>
+ <div class="svg-back bg-light border border-2 border-primary rounded d-flex flex-column justify-content-center align-items-center">
+  <div class="circle-wrapper">
+   <div class="content">
+    <p class="percent">75%</p>
+    <p class="item-counter">16 / 20</p>
+   </div>
+   <div class="outer">
+    <div class="inner">
+    </div>
+   </div>
+  </div>
   <p class="pt-4 fs-1 fw-semibold text-center">Workouts Completed</p>
  </div>

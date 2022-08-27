@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ProgressCircleComponent } from './directives/graphs/progress-circle/progress-circle.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HeaderComponent } from './navigation/header/header.component';
+import { SubLinkComponent } from './navigation/sub-link/sub-link.component';
 
 @NgModule({
-  declarations: [ProgressCircleComponent, HeaderComponent],
+  declarations: [ProgressCircleComponent, HeaderComponent, SubLinkComponent],
   imports: [
     CommonModule,
     NgCircleProgressModule.forRoot({
@@ -23,6 +24,6 @@ import { HeaderComponent } from './navigation/header/header.component';
       startFromZero: false,
     }),
   ],
-  exports: [ProgressCircleComponent, HeaderComponent],
+  exports: [ProgressCircleComponent, HeaderComponent, SubLinkComponent],
 })
 export class SharedModule {}
